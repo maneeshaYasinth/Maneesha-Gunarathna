@@ -6,7 +6,7 @@ function Navbar(){
     return(
         <div className="nav-menu">
             <div className="nav-links">
-                <ul className="">
+                <ul >
                 <li><a href="#" className="nav-text">home</a></li>
                 <li><a href="#" className="nav-text">about</a></li>
                 <li><a href="#" className="nav-text">porfolio</a></li>
