@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full shadow-lg navbar font-krona bg-gradient-to-r from-gray-700  to-gray-600 rounded-lg">
+    <nav className="fixed top-0 left-0 z-50 w-full shadow-lg navbar font-krona bg-gray-700  rounded-lg">
       <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8 ">
         <div className="relative flex items-center justify-center h-16 ">
           {/* Nav Links - Desktop */}
