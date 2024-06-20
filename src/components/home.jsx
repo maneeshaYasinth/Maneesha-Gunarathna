@@ -4,13 +4,18 @@ import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function Home() {
   return (
-    <section id="home" className="flex flex-col justify-center gap-5 text-center h-screen min-h-[500px] md:flex-row-reverse md:items-center md:justify-evenly p-4">
-      <div className="relative w-full md:w-auto">
-        <img
-          src={homeimg}
-          className="max-w-full h-auto mx-auto md:max-w-[250px] lg:max-w-[300px] object-cover"
-          alt="Profile picture of Maneesha Gunarathna"
-        />
+    <section id="home" className="flex flex-col justify-center gap-5 text-center h-screen min-h-[500px] md:flex-row-reverse md:items-center md:justify-evenly p-4 bg-gray-200">
+      <div className="relative w-full md:w-auto flex justify-center">
+        <div className="relative w-64 h-64">
+          {/* Animated Blob */}
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-400 to-purple-500 rounded-full filter blur-xl opacity-70 animate-blob"></div>
+          {/* Profile Image */}
+          <img
+            src={homeimg}
+            className="relative max-w-full h-auto mx-auto rounded-full object-cover border-4 border-white shadow-lg"
+            alt="Profile picture of Maneesha Gunarathna"
+          />
+        </div>
       </div>
       <div className="flex flex-col gap-5 w-full md:w-auto">
         <h1 className="text-4xl font-bold">
