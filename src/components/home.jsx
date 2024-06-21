@@ -8,7 +8,7 @@ function Home() {
       <div className="relative w-full md:w-auto flex justify-center">
         <div className="relative w-64 h-64">
           {/* Animated Blob */}
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-400 to-purple-500 rounded-full filter blur-xl opacity-70 animate-blob"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-customOrange to-amber-700 rounded-full filter blur-xl opacity-70 animate-blob"></div>
           {/* Profile Image */}
           <img
             src={homeimg}
