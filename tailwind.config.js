@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        customOrange: '#fd7014',
+        customOrange: '#FDA700',
       },
       keyframes: {
         blob: {
