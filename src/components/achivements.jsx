@@ -56,15 +56,17 @@ const Achivements = () => {
             <div key={card.id} className="p-4">
               <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center" style={{ height: '400px', width: '100%' }}>
                 {card.image && (
-                  <div className="w-full h-48 border-2 border-gray-300 mb-4 flex items-center justify-center overflow-hidden">
-                    <img
-                      src={card.image}
-                      alt={card.title}
-                      className="object-cover w-full h-full"
-                    />
+                  <div className="bg-gradient-to-r from-gray-400  to-gray-300 ">
+                    <div className='w-full h-48 border-2 border-gray-300 p-4 flex items-center justify-center overflow-hidden rounded-xl'>
+                      <img
+                        src={card.image}
+                        alt={card.title}
+                        className="object-cover w-full h-full shadow-xl shadow-zinc-900/50"
+                      />
+                    </div>
                   </div>
                 )}
-                <h2 className="text-xl font-bold mb-2 text-center">{card.title}</h2>
+                <h2 className="text-xl font-bold pt-3 mb-2 text-center">{card.title}</h2>
                 <p className="text-center">{card.description}</p>
               </div>
             </div>
