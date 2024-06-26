@@ -10,10 +10,10 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (<>
-  {/* <About /> */}
+  
     <Navbar />
      <Home /> 
-      
+      <About />
      <Achivements />
      <ContactForm />
      
