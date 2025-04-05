@@ -1,4 +1,3 @@
-// src/components/TiltCard.js
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
 
