@@ -2,7 +2,6 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import homeimg from '../assets/ne2.jpg';
 import API_INTRO from '../assets/API_INTRO.png';
 import full_js from '../assets/full_js.png';
 import git_hub from '../assets/git_hub.png';
@@ -10,6 +9,7 @@ import intro_front_end from '../assets/intro_front_end.png';
 import java from '../assets/java.png';
 import react_basic from '../assets/react_basics.png';
 import web_course_1 from '../assets/web_course_1.png';
+import TrailingDotGrid from './TrailingDotGrid';
 
 const cards = [
   { id: 1, image: API_INTRO, title: 'Introduction to Web APIs', description: 'This is the description for card 1.' },
@@ -49,14 +49,21 @@ const Achivements = () => {
   };
 
   return (
-    <div id='Achivements' className="bg-gray-800 min-h-screen p-4 flex justify-center items-center">
-      <div className="w-full max-w-6xl">
+    <div id='Achivements' className="relative -z-1 h-screen min-h-[500px] text-white bg-black overflow-hidden flex items-center justify-center mt-10">
+      
+      {/* Background Dot Grid */}
+      <div className="absolute inset-0 z-1">
+        <TrailingDotGrid />
+      </div>
+
+      {/* Foreground Content */}
+      <div className="relative z-10 w-full max-w-6xl">
         <Slider {...settings}>
           {cards.map((card) => (
             <div key={card.id} className="p-4">
-              <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center" style={{ height: '400px', width: '100%' }}>
+              <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center cursor-pointer hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out" style={{ height: '400px', width: '100%' }}>
                 {card.image && (
-                  <div className="bg-gradient-to-r from-gray-400  to-gray-300 ">
+                  <div className="bg-gradient-to-r from-gray-400 to-gray-300">
                     <div className='w-full h-48 border-2 border-gray-300 p-4 flex items-center justify-center overflow-hidden rounded-xl'>
                       <img
                         src={card.image}
@@ -66,8 +73,8 @@ const Achivements = () => {
                     </div>
                   </div>
                 )}
-                <h2 className="text-xl font-bold pt-3 mb-2 text-center">{card.title}</h2>
-                <p className="text-center">{card.description}</p>
+                <h2 className="text-xl font-bold pt-3 mb-2 text-center text-black">{card.title}</h2>
+                <p className="text-center text-gray-800">{card.description}</p>
               </div>
             </div>
           ))}
