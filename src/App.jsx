@@ -3,6 +3,7 @@ import Home from './components/home'
 import Achivements from './components/achivements'
 import ContactForm from './components/contact'
 import About from './components/about'
+import Education from './components/Education'
 
 function App() {
 
@@ -10,10 +11,12 @@ function App() {
   return (<>
   
     <Navbar />
-     <Home /> 
+     {/* <Home /> 
       <About />
      <Achivements />
-     <ContactForm />
+     <ContactForm /> */}
+     <Education />
+
     </>
   )
 }

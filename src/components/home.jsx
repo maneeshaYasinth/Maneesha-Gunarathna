@@ -7,15 +7,15 @@ function Home() {
   return (
     <section
       id="home"
-      className="relative h-screen min-h-[500px] text-white bg-black overflow-hidden flex items-center justify-center pt-10"
+      className="relative h-screen min-h-[500px] text-white bg-black overflow-hidden flex items-center justify-center pt-16"
     >
       {/* 🎯 Interactive Dot Grid Background */}
       <TrailingDotGrid />
 
       {/* 🧍‍♂️ Foreground Content */}
-      <div className="absolute top-0 left-0 w-full h-full  flex flex-col justify-center items-center gap-5 p-4 text-center">
+      <div className="absolute top-0 left-0 w-full h-full  flex flex-col justify-center items-center gap-5 p-4  pt-4 text-center">
         <div className="relative w-64 h-64">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-customOrange to-amber-700 rounded-full filter blur-xl opacity-70 animate-blob"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-customOrange to-amber-700 rounded-full filter blur-xl opacity-70 animate-blob "></div>
           <img
             src={homeimg}
             className="relative max-w-full h-auto mx-auto rounded-full object-cover border-4 border-white shadow-lg"
@@ -41,9 +41,9 @@ function Home() {
               <FaLinkedin className="w-7 h-7" />
             </a>
           </span>
-          <p className="max-w-prose mx-auto">
+          {/* <p className="max-w-prose mx-auto">
             Hi, I'm Maneesha, a developer passionate about innovation. Explore my projects and skills. Let's create something amazing together!
-          </p>
+          </p> */}
         </div>
       </div>
     </section>
