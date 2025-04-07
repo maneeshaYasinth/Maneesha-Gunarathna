@@ -9,14 +9,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full shadow-lg navbar font-krona bg-gray-900  rounded-lg">
+    <nav className="fixed top-0 left-0 z-50 w-full shadow-lg navbar font-krona bg-white/10 backdrop-blur-md border border-white/20 rounded-lg">
       <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8 ">
         <div className="relative flex items-center justify-center h-16 ">
           {/* Nav Links - Desktop */}
           <div className="hidden sm:flex sm:items-center sm:space-x-4 ">
           <NavLink href="#home">Home</NavLink>
             <NavLink href="#About">About</NavLink>
-            <NavLink href="#portfolio">Portfolio</NavLink>
+            <NavLink href="#education">Education</NavLink>
             <NavLink href="#Achivements">Achivements</NavLink>
             <NavLink href="#contact">Contact</NavLink>
           </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
             <div className="flex flex-col items-start space-y-4 " onClick={toggleMenu}>
             <NavLink href="#home">Home</NavLink>
             <NavLink href="#About">About</NavLink>
-            <NavLink href="#portfolio">Portfolio</NavLink>
+            <NavLink href="#education">Education</NavLink>
             <NavLink href="#Achivements">Achivements</NavLink>
             <NavLink href="#contact">Contact</NavLink>
             </div>

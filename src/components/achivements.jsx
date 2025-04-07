@@ -49,11 +49,11 @@ const Achivements = () => {
   };
 
   return (
-    <div id='Achivements' className="relative -z-1 h-screen min-h-[500px] text-white bg-black overflow-hidden flex items-center justify-center mt-10">
+    <div id='Achivements' className="relative  h-screen min-h-[500px] text-white bg-black overflow-hidden flex items-center justify-center pt-10">
       
       {/* Background Dot Grid */}
-      <div className="absolute inset-0 z-1">
-        <TrailingDotGrid />
+      <div className="absolute inset-0 z-1 pointer-events-none">
+        <TrailingDotGrid className="w-full h-full"/>
       </div>
 
       {/* Foreground Content */}
@@ -61,7 +61,7 @@ const Achivements = () => {
         <Slider {...settings}>
           {cards.map((card) => (
             <div key={card.id} className="p-4">
-              <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center cursor-pointer hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out" style={{ height: '400px', width: '100%' }}>
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 shadow-lg rounded-xl p-6 flex flex-col items-center cursor-pointer hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out" style={{ height: '400px', width: '100%' }}>
                 {card.image && (
                   <div className="bg-gradient-to-r from-gray-400 to-gray-300">
                     <div className='w-full h-48 border-2 border-gray-300 p-4 flex items-center justify-center overflow-hidden rounded-xl'>
@@ -73,8 +73,8 @@ const Achivements = () => {
                     </div>
                   </div>
                 )}
-                <h2 className="text-xl font-bold pt-3 mb-2 text-center text-black">{card.title}</h2>
-                <p className="text-center text-gray-800">{card.description}</p>
+                <h2 className="text-xl font-bold pt-3 mb-2 text-center text-white">{card.title}</h2>
+                <p className="text-center text-gray-200">{card.description}</p>
               </div>
             </div>
           ))}
