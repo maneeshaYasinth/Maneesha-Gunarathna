@@ -1,7 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import API_INTRO from '../assets/API_INTRO.png';
 import full_js from '../assets/full_js.png';
 import git_hub from '../assets/git_hub.png';
@@ -49,15 +50,25 @@ const Achivements = () => {
   };
 
   return (
-    <div id='Achivements' className="relative  h-screen min-h-[500px] text-white bg-black overflow-hidden flex items-center justify-center pt-10">
-      
+    <div id='Achivements' className="relative min-h-screen text-white bg-black overflow-hidden pt-10">
+
       {/* Background Dot Grid */}
       <div className="absolute inset-0 z-1 pointer-events-none">
-        <TrailingDotGrid className="w-full h-full"/>
+        <TrailingDotGrid className="w-full h-full" />
       </div>
 
-      {/* Foreground Content */}
-      <div className="relative z-10 w-full max-w-6xl">
+      {/* Heading */}
+      <div className="relative z-10 w-full text-center mt-10 mb-6 px-4">
+        <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
+          My Professional Badges
+        </h1>
+        <p className="text-gray-400 text-base">
+          Achievements and recognitions earned through learning platforms.
+        </p>
+      </div>
+
+      {/* Carousel */}
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 pb-20">
         <Slider {...settings}>
           {cards.map((card) => (
             <div key={card.id} className="p-4">
