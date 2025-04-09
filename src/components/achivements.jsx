@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { motion } from 'framer-motion';
 
 import API_INTRO from '../assets/API_INTRO.png';
 import full_js from '../assets/full_js.png';
@@ -50,7 +51,7 @@ const Achivements = () => {
   };
 
   return (
-    <div id='Achivements' className="relative min-h-screen text-white bg-black overflow-hidden pt-10">
+    <div id='Achivements' className="relative min-h-screen text-white bg-black overflow-hidden pt-0 mt-0">
 
       {/* Background Dot Grid */}
       <div className="absolute inset-0 z-1 pointer-events-none">
@@ -58,6 +59,13 @@ const Achivements = () => {
       </div>
 
       {/* Heading */}
+      <motion.div
+        className="relative z-10 w-full text-center mt-10 mb-6 px-4"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
       <div className="relative z-10 w-full text-center mt-10 mb-6 px-4">
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
           My Professional Badges
@@ -66,12 +74,20 @@ const Achivements = () => {
           Achievements and recognitions earned through learning platforms.
         </p>
       </div>
+      </motion.div>
 
       {/* Carousel */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 pb-20">
         <Slider {...settings}>
           {cards.map((card) => (
-            <div key={card.id} className="p-4">
+            <motion.div
+              key={card.id}
+              className="p-4"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
               <div className="bg-white/10 backdrop-blur-md border border-white/20 shadow-lg rounded-xl p-6 flex flex-col items-center cursor-pointer hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out" style={{ height: '400px', width: '100%' }}>
                 {card.image && (
                   <div className="bg-gradient-to-r from-gray-400 to-gray-300">
@@ -87,7 +103,7 @@ const Achivements = () => {
                 <h2 className="text-xl font-bold pt-3 mb-2 text-center text-white">{card.title}</h2>
                 <p className="text-center text-gray-200">{card.description}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </Slider>
       </div>
