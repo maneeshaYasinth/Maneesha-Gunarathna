@@ -68,7 +68,7 @@ const Achivements = () => {
       >
       <div className="relative z-10 w-full text-center mt-10 mb-6 px-4">
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
-          My Professional Badges
+          My Professional certifications
         </h1>
         <p className="text-gray-400 text-base">
           Achievements and recognitions earned through learning platforms.
