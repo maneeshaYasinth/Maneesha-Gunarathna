@@ -42,9 +42,9 @@ const Navbar = () => {
       {isOpen && (
         <div className="fixed inset-0 z-50 flex">
           {/* Sidebar Content */}
-          <div className="w-full h-full bg-gradient-to-r from-gray-800  to-gray-700 p-4 space-y-4 transition-transform duration-300 ease-in-out transform backdrop-filter backdrop-blur-lg shadow-lg">
+          <div className="w-full h-full bg-black bg-opacity-80 p-4 space-y-4 justify-center">
             {/* Close Button */}
-            <div className="flex items-center justify-between">
+            <div className="flex items-center  justify-between">
               <button
                 className="text-white focus:outline-none"
                 onClick={toggleMenu}
@@ -54,12 +54,12 @@ const Navbar = () => {
             </div>
 
             {/* Navigation Links */}
-            <div className="flex flex-col items-start space-y-4 " onClick={toggleMenu}>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/About">About</NavLink>
-            <NavLink to="/education">Education</NavLink>
-            <NavLink to="/Achivements">Achivements</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
+            <div className="flex flex-col items-center justify-center min-h-screen space-y-6 bg-black bg-opacity-80 text-white text-center m-0" onClick={toggleMenu}>
+              <NavLink to="/">Home</NavLink>
+              <NavLink to="/About">About</NavLink>
+              <NavLink to="/education">Education</NavLink>
+              <NavLink to="/Achivements">Achivements</NavLink>
+              <NavLink to="/contact">Contact</NavLink>
             </div>
           </div>
 
