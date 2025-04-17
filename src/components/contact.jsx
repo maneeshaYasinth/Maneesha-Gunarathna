@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import TrailingDotGrid from './TrailingDotGrid';
+import { FiMail } from "react-icons/fi";
+import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from "react-icons/fa6";
 
 export default function Connect() {
   const [name, setName] = useState('');
@@ -33,7 +35,7 @@ export default function Connect() {
   };
 
   return (
-    <div id='Connect' className="relative min-h-screen text-white bg-black overflow-hidden flex flex-col items-center justify-center pt-16 px-4">
+    <div id='Connect' className="relative min-h-screen text-white bg-black overflow-hidden flex flex-col items-center justify-center py-16 px-4 ">
       <div className="absolute inset-0 z-1 pointer-events-none">
         <TrailingDotGrid className="w-full h-full" />
       </div>
@@ -43,9 +45,9 @@ export default function Connect() {
         <p className="text-xl text-center mb-12">Connect with me through social media and other communication channels.</p>
 
         {/* Form and Social Links Side-by-Side */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 ">
           {/* Contact Form */}
-          <form className="w-full" onSubmit={handleSubmit}>
+          <form className="w-full backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-4 shadow-md hover:shadow-lg " onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div>
                 <label htmlFor="name" className="block text-xl mb-4">Name</label>
@@ -113,29 +115,52 @@ export default function Connect() {
 
           {/* Social Links */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
-            <SocialLink platform="Email" value="maneeshayasinthgunarthna@gmail.com" href="mailto:maneeshayasinthgunarthna@gmail.com" icon="✉️" />
-            <SocialLink platform="GitHub" value="maneeshaYasinth" href="https://github.com/maneeshaYasinth" icon="💻" />
-            <SocialLink platform="LinkedIn" value="Maneesha Gunarthna" href="#" icon="🔗" />
-            <SocialLink platform="X (Twitter)" value="Maneesha Gunarthna" href="#" icon="🐦" />
-            <SocialLink platform="Instagram" value="Maneesha Gunarthna" href="#" icon="📷" />
-          </div>
+              <SocialLink 
+                platform="Email" 
+                value="maneeshayasinthgunarthna@gmail.com" 
+                href="mailto:maneeshayasinthgunarthna@gmail.com" 
+                icon={<FiMail size={20} />} 
+              />
+              <SocialLink 
+                platform="GitHub" 
+                value="maneeshaYasinth" 
+                href="https://github.com/maneeshaYasinth" 
+                icon={<FaGithub size={20} />} 
+              />
+              <SocialLink 
+                platform="LinkedIn" 
+                value="Maneesha Gunarthna" 
+                href="#" 
+                icon={<FaLinkedin size={20} />} 
+              />
+              <SocialLink 
+                platform="X (Twitter)" 
+                value="Maneesha Gunarthna" 
+                href="#" 
+                icon={<FaXTwitter size={20} />} 
+              />
+              <SocialLink 
+                platform="Instagram" 
+                value="Maneesha Gunarthna" 
+                href="#" 
+                icon={<FaInstagram size={20} />} 
+              />
+            </div>
         </div>
       </div>
     </div>
   );
 }
 
-function SocialLink({ platform, value, href, icon }) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-gray-800 hover:bg-gray-700 p-4 rounded-lg transition duration-300 hover:text-orange-400"
-    >
-      <div className="text-2xl mb-2">{icon}</div>
-      <div className="font-bold">{platform}</div>
-      <div className="text-sm opacity-80">{value}</div>
-    </a>
-  );
-}
+const SocialLink = ({ platform, value, href, icon }) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full min-h-[80px] sm:min-h-[80px] backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-4 shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-center gap-2 text-white hover:bg-white/20"
+  >
+    <span className="text-2xl">{icon}</span>
+    {/* <span className="text-sm">{value}</span> */}
+  </a>
+);
+
