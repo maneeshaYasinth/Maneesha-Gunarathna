@@ -50,7 +50,7 @@ export default function AboutMe() {
             <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
             <p>
               Hey! I’m Maneesha Yasinth Gunarathna, a 3rd-year undergraduate in
-              BSc Electronics & Computer Science at the University of Kelaniya.
+              BSc Electronics & Computer Science(Specialized in CS) at the University of Kelaniya.
               Passionate about tech, learning, and turning ideas into reality. I
               love building projects that blend design with logic.
             </p>
@@ -97,7 +97,7 @@ export default function AboutMe() {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Goals</h2>
             <ul className="space-y-2">
-              <li>✅ Got into Computer Science Specialization 🎉</li>
+              <li>✅ <del>Got into Computer Science Specialization</del> Done🎉</li>
               <li>🧑‍💻 Master Backend Dev (Spring Boot / Firebase)</li>
               <li>☁️ Earn AWS Cloud Practitioner Cert</li>
               <li>💡 Build practical, impactful systems</li>
@@ -124,7 +124,7 @@ export default function AboutMe() {
             <h2 className="text-2xl font-semibold mb-4">Interests</h2>
             <ul className="space-y-2">
               <li>🏎️ Formula 1 (UndercutPit F1 is my site!)</li>
-              <li>🎮 Gaming & Web Projects</li>
+              <li>🎮 Cloud Computing & Web Projects</li>
               <li>🧩 Problem Solving & Debugging</li>
               <li>🧋 Tea, Aesthetic UI, and Noodle-curly hair 👀</li>
             </ul>
