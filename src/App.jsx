@@ -3,6 +3,7 @@ import Home from './components/home'
 import ContactForm from './components/contact'
 import About from './components/about'
 import EducationPage from './pages/EducationPage'
+import Experience from './components/Experience'
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Education" element={<EducationPage />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Experience" element={<Experience />} />
         <Route path="/Contact" element={<ContactForm />} />
       </Routes>
 
