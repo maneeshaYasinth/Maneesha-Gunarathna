@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import TrailingDotGrid from './TrailingDotGrid';
 import { FiMail } from "react-icons/fi";
-import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram, FaFacebook } from "react-icons/fa6";
 
 export default function Connect() {
   const [name, setName] = useState('');
@@ -130,20 +130,26 @@ export default function Connect() {
               <SocialLink 
                 platform="LinkedIn" 
                 value="Maneesha Gunarthna" 
-                href="#" 
+                href="https://www.linkedin.com/in/maneesha-yasinth/" 
                 icon={<FaLinkedin size={20} />} 
               />
               <SocialLink 
                 platform="X (Twitter)" 
                 value="Maneesha Gunarthna" 
-                href="#" 
+                href="https://x.com/Maneeshagunra23" 
                 icon={<FaXTwitter size={20} />} 
               />
               <SocialLink 
                 platform="Instagram" 
                 value="Maneesha Gunarthna" 
-                href="#" 
+                href="https://www.instagram.com/maneeshayasinth/" 
                 icon={<FaInstagram size={20} />} 
+              />
+              <SocialLink 
+                platform="Facebook" 
+                value="Maneesha Gunarthna" 
+                href="https://web.facebook.com/maneesha.gunarathna.7/" 
+                icon={<FaFacebook size={20} />} 
               />
             </div>
         </div>
