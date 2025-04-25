@@ -32,7 +32,7 @@ export default function ProfessionalBadges() {
   return (
     <section className="min-h-screen bg-black text-white py-20 px-6 flex flex-col items-center">
 
-        <div className="absolute inset-0 z-1 pointer-events-none">
+        <div className="absolute inset-0 z-1 pointer-events-none mt-16">
                 <TrailingDotGrid className="w-full h-full" />
               </div>
 
