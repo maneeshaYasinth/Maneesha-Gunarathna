@@ -69,9 +69,9 @@ export default function Positions() {
   return (
     <section className="relative min-h-screen bg-black text-white px-4 py-20 flex flex-col items-center justify-center overflow-hidden z-0">
       {/* Background Dot Grid */}
-      <div className="absolute inset-0 -z-10">
+      {/* <div className="absolute inset-0 -z-10">
         <TrailingDotGrid className="w-full h-full" />
-      </div>
+      </div> */}
 
       <div className="text-center mb-12 z-10">
         <h1 className="text-4xl font-bold mb-2">My Positions</h1>
