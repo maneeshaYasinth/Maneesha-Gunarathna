@@ -2,6 +2,7 @@ import React from 'react';
 import Experience from '../components/Experience';
 import Badges from '../components/Badges';
 import TrailingDotGrid from '../components/TrailingDotGrid';
+import GithubStats from '../components/GithubStats';
 
 const ExperiencePage = () => {
   return (
@@ -14,6 +15,7 @@ const ExperiencePage = () => {
       {/* Content sections */}
       <Experience />
       <Badges />
+      <GithubStats />
     </div>
   );
 };
