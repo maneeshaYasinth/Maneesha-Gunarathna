@@ -6,7 +6,7 @@ const GithubStats = () => {
     <>
       <div
         id="Achivements"
-        className="relative h-screen min-h-[500px] text-white bg-black overflow-hidden flex flex-col items-center justify-center pt-10"
+        className="relative h-screen min-h-[500px] text-white bg-black overflow-hidden flex flex-col items-center justify-center pt-0"
       >
        
         <div className="relative z-10 w-full text-center mb-12 px-4">
@@ -40,8 +40,6 @@ const GithubStats = () => {
               <img
                 src="https://github-readme-stats.vercel.app/api?username=ManeeshaYasinth&show_icons=true&theme=radical"
                 alt="GitHub Stats"
-                className="h-auto w-full max-w-md"
-                crossOrigin="anonymous"
               />
             </div>
           </motion.div>
@@ -58,8 +56,6 @@ const GithubStats = () => {
               <img
                 src="https://streak-stats.demolab.com?user=ManeeshaYasinth&theme=dark"
                 alt="GitHub Streak"
-                className="h-auto w-full max-w-md"
-                crossOrigin="anonymous"
               />
             </div>
           </motion.div>
@@ -76,8 +72,6 @@ const GithubStats = () => {
               <img
                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=ManeeshaYasinth&layout=compact&theme=radical"
                 alt="Top Languages"
-                className="h-auto w-full max-w-md"
-                crossOrigin="anonymous"
               />
             </div>
           </motion.div>
