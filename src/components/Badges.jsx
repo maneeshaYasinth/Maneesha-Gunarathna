@@ -3,13 +3,13 @@ import awsKnowledge from '../assets/badges/cloud101.png';
 import storage from "../assets/badges/cloud-storage.png";
 import postman from "../assets/badges/postman.png";
 import cloudEssential from "../assets/badges/aws-knowledge-cloud-essentials.png";
-import TrailingDotGrid from "./TrailingDotGrid";
+// import TrailingDotGrid from "./TrailingDotGrid"; // Uncomment if needed
 
 const badges = [
   {
     title: "Postman API Fundementals",
     issuer: "Postman",
-    img:postman,
+    img: postman,
   },
   {
     title: "Cloud Essentials",
@@ -30,14 +30,14 @@ const badges = [
 
 export default function ProfessionalBadges() {
   return (
-    <section className="min-h-screen bg-black text-white py-20 px-6 flex flex-col items-center">
-
-        {/* <div className="absolute inset-0 z-1 pointer-events-none mt-16">
-                <TrailingDotGrid className="w-full h-full" />
-              </div> */}
+    <section className="bg-black text-white pt-10 pb-6 px-6 flex flex-col items-center">
+      {/* Optional: Uncomment if using background effects */}
+      {/* <div className="absolute inset-0 z-1 pointer-events-none mt-16">
+        <TrailingDotGrid className="w-full h-full" />
+      </div> */}
 
       <h1 className="text-4xl font-bold mb-4 text-center">My Professional Badges</h1>
-      <p className="text-gray-400 mb-12 text-center max-w-xl">
+      <p className="text-gray-400 mb-8 text-center max-w-xl">
         Achievements and recognitions earned through learning platforms
       </p>
 
