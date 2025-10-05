@@ -29,7 +29,7 @@ function Home() {
             <br />
             Gunarathna
           </h1>
-          <h2 className="text-2xl">Full-Stack Developer | cloud Enthusiast | Electronics & Computer Science Undergraduate | University of Kelaniya</h2>
+          <h2 className="text-2xl">Full-Stack Developer | cloud Enthusiast | Electronics & Computer Science Undergraduate (sp in cs) | University of Kelaniya</h2>
           <span className="flex justify-center gap-6">
             <a href="https://www.instagram.com/maneesha_yasinth/" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="w-7 h-7" />
