@@ -29,7 +29,7 @@ const positions = [
   },
   {
     role: "Project Manager",
-    org: "UOK Robot Battle 2k25 (upcoming)",
+    org: "UOK Robot Battle 2k25",
     date: "03/2025 - PRESENT",
     location: "University of Kelaniya",
     img: robotbattle,
@@ -106,8 +106,8 @@ export default function Positions() {
         )}
         <h2 className="text-xl font-semibold">{pos.role}</h2>
         <p className="text-sm text-gray-400">{pos.org}</p>
-        <p className="text-xs text-gray-500 italic">
-          {pos.date} | {pos.location}
+        <p className="text-xs text-gray-500 italic"><b>
+          {pos.date} | {pos.location}</b>
         </p>
         <ul className="list-disc list-inside text-sm space-y-1 text-gray-300 text-left">
           {pos.bullets.map((point, i) => (
