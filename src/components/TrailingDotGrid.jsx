@@ -69,5 +69,21 @@ export default function TrailingDotGrid() {
     setup(p, p.canvas.parent());
   };
 
-  return <Sketch setup={setup} draw={draw} windowResized={windowResized} />;
+  return (
+  <div
+    className="dot-bg"
+    style={{
+      position: "fixed",
+      top: 0,
+      left: 0,
+      width: "100vw",
+      height: "100vh",
+      zIndex: -1,          // behind everything
+      pointerEvents: "none" // prevents blocking clicks
+    }}
+  >
+    <Sketch setup={setup} draw={draw} windowResized={windowResized} />
+  </div>
+);
+
 }

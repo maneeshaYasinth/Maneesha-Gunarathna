@@ -2,26 +2,28 @@ import Navbar from './components/navbar'
 import Home from './components/home'
 import ContactForm from './components/contact'
 import About from './components/about'
-import EducationPage from './pages/EducationPage'
-import ExperiencePage from './pages/ExperiencePage'
-import { Route, Routes } from 'react-router-dom';
+import Education from './components/Education'
+import Experience from './components/Experience'
+import TrailingDotGrid from './components/TrailingDotGrid'
 
 function App() {
+  return (
+    <>
+  <div className="fixed inset-0 -z-10">
+    <TrailingDotGrid />
+  </div>
 
+  <Navbar />
+  <main className="bg-transparent">
+      <Home />
+      <About />
+      <Education />
+      <Experience />
+      <ContactForm />
+  </main>
+</>
 
-  return (<>
-  
-    <Navbar />
-    <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Education" element={<EducationPage />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Experience" element={<ExperiencePage />} />
-        <Route path="/Contact" element={<ContactForm />} />
-      </Routes>
-
-    </>
   );
 }
 
-export default App
+export default App;

@@ -35,7 +35,7 @@ export default function Connect() {
   };
 
   return (
-    <div id='Connect' className="relative min-h-screen text-white bg-black overflow-hidden flex flex-col items-center justify-center py-16 px-4 ">
+    <div id='contact' className="relative min-h-screen text-white bg-black overflow-hidden flex flex-col items-center justify-center py-16 px-4 ">
       <div className="absolute inset-0 z-1 pointer-events-none">
         <TrailingDotGrid className="w-full h-full" />
       </div>

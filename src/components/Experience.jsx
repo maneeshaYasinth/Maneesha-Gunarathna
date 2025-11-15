@@ -67,7 +67,7 @@ export default function Positions() {
     "bg-white/5 backdrop-blur-md border border-white/10 rounded-xl shadow-md p-6 flex flex-col space-y-4 max-w-xl transform transition hover:scale-[1.02] duration-300";
 
   return (
-    <section className="relative min-h-screen bg-black text-white px-4 py-20 flex flex-col items-center justify-center overflow-hidden z-0">
+    <section id="experience" className="relative min-h-screen bg-black text-white px-4 py-20 flex flex-col items-center justify-center overflow-hidden z-0">
       {/* Background Dot Grid */}
       {/* <div className="absolute inset-0 -z-10">
         <TrailingDotGrid className="w-full h-full" />
