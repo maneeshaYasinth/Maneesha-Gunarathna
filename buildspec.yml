@@ -1,0 +1,28 @@
+version: 0.2
+
+# Define the build environment runtime
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20 # Specify the Node.js version compatible with Vite/React
+    commands:
+      - echo Installing NPM dependencies...
+      - npm install
+      
+  # Compile phase: creates the production assets
+  build:
+    commands:
+      - echo Running Vite production build...
+      - npm run build
+      
+  # Verification phase 
+  post_build:
+    commands:
+      - echo Build artifact directory contents:
+      - ls -l dist 
+
+# Artifacts: Define what files CodeBuild packages up and sends to the S3 deployment stage.
+artifacts:
+  files:
+    - '**/*' # Selects all files inside the base-directory for deployment
+  base-directory: dist # CRITICAL: This must match Vite's default output folder ('dist')
