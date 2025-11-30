@@ -13,7 +13,7 @@ function Home() {
       <TrailingDotGrid />
 
       {/* 🧍‍♂️ Foreground Content */}
-      <div className="absolute top-0 left-0 w-full h-full  flex flex-col justify-center items-center gap-5 p-4  pt-4 text-center">
+      <div className="absolute top-0 left-0 w-full h-full  flex flex-col justify-center items-center gap-5 p-4  pt-4 text-center z-10">
         <div className="relative w-64 h-64">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-customOrange to-amber-700 rounded-full filter blur-xl opacity-70 animate-blob "></div>
           <img

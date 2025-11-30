@@ -12,6 +12,7 @@
   "dependencies": {
     "emailjs-com": "^3.2.0",
     "framer-motion": "^12.6.3",
+    "lucide-react": "^0.259.0",
     "p5": "^1.11.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
