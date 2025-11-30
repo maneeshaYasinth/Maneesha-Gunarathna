@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from 'framer-motion';
 import awsKnowledge from '../assets/badges/cloud101.png';
 import storage from "../assets/badges/cloud-storage.png";
 import postman from "../assets/badges/postman.png";
@@ -30,7 +31,7 @@ const badges = [
 
 export default function ProfessionalBadges() {
   return (
-    <section className="bg-black text-white pt-10 pb-6 px-6 flex flex-col items-center">
+    <motion.section className="bg-black text-white pt-10 pb-6 px-6 flex flex-col items-center" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true, amount: 0.15 }}>
       {/* Optional: Uncomment if using background effects */}
       {/* <div className="absolute inset-0 z-1 pointer-events-none mt-16">
         <TrailingDotGrid className="w-full h-full" />
@@ -43,7 +44,7 @@ export default function ProfessionalBadges() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         {badges.map((badge, index) => (
-          <div key={index} className="flex flex-col items-center space-y-2">
+          <motion.div key={index} className="flex flex-col items-center space-y-2" initial={{ opacity: 0, y: 10, scale: 0.98 }} whileInView={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 0.55, delay: index * 0.06 }} viewport={{ once: true, amount: 0.2 }}>
             <img
               src={badge.img}
               alt={badge.title}
@@ -51,9 +52,9 @@ export default function ProfessionalBadges() {
             />
             <p className="text-sm font-semibold text-center">{badge.title}</p>
             <p className="text-xs text-gray-500 text-center">{badge.issuer}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -5,6 +5,7 @@ import About from './components/about'
 import Education from './components/Education'
 import Experience from './components/Experience'
 import TrailingDotGrid from './components/TrailingDotGrid'
+import BackToTop from './components/BackToTop'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Experience />
       <ContactForm />
   </main>
+  <BackToTop />
 </>
 
   );
