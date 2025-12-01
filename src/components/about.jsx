@@ -99,7 +99,7 @@ const About = () => {
               <li>🏎️ Formula 1 (UndercutPit F1 is my site!)</li>
               <li>🎮 Cloud Computing & Web Projects</li>
               <li>🧩 Problem Solving & Debugging</li>
-              <li>🧋 Tea, Aesthetic UI, and Noodle-curly hair 👀</li>
+              <li>🧋 Tea, Aesthetic UI 👀</li>
             </ul>
           </div>
         </motion.div>
